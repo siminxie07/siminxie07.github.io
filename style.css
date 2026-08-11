@@ -155,3 +155,34 @@ footer {
   color: var(--muted);
   margin: 0.8rem 0 0;
 }
+
+.subhead {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin: 2rem 0 0.5rem;
+}
+
+.ta {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ta li {
+  font-size: 0.96rem;
+  line-height: 1.55;
+  margin-bottom: 0.35rem;
+}
+
+.term {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.term::before { content: " · "; }
+
+@media (max-width: 620px) {
+  .term { display: block; }
+  .term::before { content: none; }
+}
